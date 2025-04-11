@@ -89,7 +89,7 @@ if uploaded_file:
                     "product": {
                         "handle": first["Handle"],
                         "title": first["Title"],
-                        "published": True,
+                        "status": "draft",
                         "body_html": body_html,
                         "vendor": first["Vendor"],
                         "product_type": first["Product Type"],
