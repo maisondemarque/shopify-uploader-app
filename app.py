@@ -61,13 +61,13 @@ if uploaded_file:
                 first = group.iloc[0]
                 size_table_html = generate_size_table_extended(first)
                 formatted_sku = format_sku(first["Variant SKU"])
-                color = first["Option2 Value"]
+                colors = ", ".join(group["Option2 Value"].dropna().unique())
                 fabric = "Polyester"
 
                 body_html = f"""
                 <div style="font-size: 9pt; line-height: 2;">
                     <p>SKU: {formatted_sku}<br>
-                    Color: {color}<br>
+                    Color: {colors}<br>
                     Fabric: {fabric}</p>
                     {size_table_html}
                 </div>
