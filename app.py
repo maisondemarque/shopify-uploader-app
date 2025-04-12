@@ -17,7 +17,7 @@ headers = {
 
 # === サイズ表HTMLを生成 ===
 def generate_size_table_extended(row):
-    sizes = ["S", "M", "L", "XL"]
+    sizes = ["S", "M", "L", "XL","XXL"]
     headers = shoulders = widths = lengths = sleeves = ""
 
     for size in sizes:
